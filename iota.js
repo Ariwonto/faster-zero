@@ -42,7 +42,7 @@ exports.publish = async payload => {
   // console.log('Attached Message:', message.state);
 
   // Store encryption key in Firebase
-  const callbackResponse = await storeKey(mamKey, message.root, time);
+  const callbackResponse = await storeKey(mamKey, message.root, time, live);
 
   console.log('Payload:', packet);
   console.log(callbackResponse);
